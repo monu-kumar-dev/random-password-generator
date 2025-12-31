@@ -37,12 +37,6 @@ This project generates strong passwords and allows users to copy them instantly 
 
 ---
 
-## 📸 Screenshot
-
-> (You can add a screenshot later if you want)
-
----
-
 ## 📂 Project Structure
 
 random-password-generator/
