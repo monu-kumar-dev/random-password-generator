@@ -27,13 +27,15 @@ This project generates strong passwords and allows users to copy them instantly 
 
 ---
 
-## 🧠 Concepts Used
+## 🧠 What I Learned
 
-- DOM Manipulation
-- Math.random() & Math.floor()
-- String and Array methods
-- Clipboard API (Modern JavaScript)
-- Password security logic
+- How to generate random values using `Math.random()` and `Math.floor()`
+- Working with strings and arrays (`split`, `join`, `length`)
+- Implementing password security rules (uppercase, lowercase, numbers, symbols)
+- Shuffling characters to avoid predictable password patterns
+- DOM manipulation using JavaScript
+- Using the modern Clipboard API to copy text
+- Writing clean, readable, and reusable JavaScript code
 
 ---
 
