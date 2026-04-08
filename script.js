@@ -2,17 +2,26 @@ const passwordBox = document.getElementById("password");
 const password_length = 12;
 
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const lowerCase = "abcdefghijklmnopqurstuvwxyz";
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
 const symbol = "~!@#$%^&*(<)[>-=]{_}/";
 const allChars = upperCase + lowerCase + number + symbol;
 
 //Shuffle function(randomely swap)
+// function shuffle(str) {
+//   return str
+//     .split("") // string -> array
+//     .sort(() => Math.random() - 0.5) // randomely swap
+//     .join(""); // array -> string
+// }
+
 function shuffle(str) {
-  return str
-    .split("") // string -> array
-    .sort(() => Math.random() - 0.5) // randomely swap
-    .join(""); // array -> string
+  let arr = str.split("");
+  for (let i = arr.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr.join("");
 }
 
 function createPassword() {
